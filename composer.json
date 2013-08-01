@@ -1,5 +1,5 @@
 {
-	"name": "AndrewLowther/mediamanager",
+	"name": "andrewlowther/mediamanager",
 	"version": "0.1.0",
 	"description": "Cloudinary Integrated Silverstripe Media Manager",
 	"type": "silverstripe-module",
