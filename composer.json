@@ -1,0 +1,20 @@
+{
+	"name": "AndrewLowther/mediamanager",
+	"version": "0.1.0",
+	"description": "Cloudinary Integrated Silverstripe Media Manager",
+	"type": "silverstripe-module",
+	"keywords": [
+		"Silverstripe",
+		"Cloudinary",
+		"Media Manager"
+	],
+	"license": "MIT",
+	"authors": [{
+		"name": "Andrew Lowther",
+		"email": "andrew.lowther@mademedia.co.uk"
+	}],
+	"require": {
+		"silverstripe/framework": ">=3.1.x-dev,<4.0",
+		"cloudinary/cloudinary_php": "dev-master"
+	},
+}
