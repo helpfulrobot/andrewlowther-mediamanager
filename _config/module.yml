@@ -3,3 +3,5 @@ Name: MediaManager
 ---
 Cloudinary:
   ApiKey: null
+  ApiSecret: null
+  CloudName: null
