@@ -19,7 +19,7 @@ class MediaItem extends DataObject {
 	 * @access private
 	 */
 	private static $db = array(
-		"CloudinaryRef" => "Varchar(255)"
+		'CloudinaryRef' => 'Varchar(255)'
 	);
 
 	/**
@@ -41,6 +41,19 @@ class MediaItem extends DataObject {
 	 **/
 	public function getCloudinaryRef() {
 		return $this->CloudinaryRef;
+	}
+
+	/**
+	 * Update the CMS fields
+	 * 
+	 * @return FieldList
+	 * @author Andrew Lowther <andrew.lowther@mademedia.co.uk>
+	 */
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+		$fields->replaceField('CloudinaryRef', new FileField('CloudinaryRef', 'Media to Upload'));
+
+		return $fields;
 	}
 
 }

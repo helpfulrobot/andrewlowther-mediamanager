@@ -1,7 +1,8 @@
 ---
 Name: MediaManager
 ---
-Cloudinary:
-  ApiKey: null
-  ApiSecret: null
-  CloudName: null
+MediaManager:
+  Cloudinary:
+    api_key: null
+    api_secret: null
+    cloud_name: null
