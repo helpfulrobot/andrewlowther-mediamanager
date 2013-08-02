@@ -18,7 +18,7 @@ class MediaManagerAdminTest extends SapphireTest {
 	 * @var string
 	 * @access public
 	 */
-	public static $fixture_file = 'mediamanager/tests/admin/MediaManagerAdminTest.yml';
+	public static $fixture_file = 'mediamanager/tests/Admin/MediaManagerAdminTest.yml';
 
 	/**
 	 * Original environment type

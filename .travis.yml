@@ -21,4 +21,4 @@ before_script:
   - cd ~/builds/ss
 
 script: 
-  - phpunit mediamanager/tests/
+  - phpunit mediamanager/tests/ '' flush=all
