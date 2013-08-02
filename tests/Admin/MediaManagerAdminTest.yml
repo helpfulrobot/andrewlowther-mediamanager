@@ -1,0 +1,15 @@
+MediaItem:
+  test:
+    CloudinaryRef: sample.jpg
+Group:
+   admin:
+      Title: Administrators
+Permission:
+   admin:
+      Code: ADMIN
+      GroupID: =>Group.admin
+Member:
+  admin:
+    Email: admin@example.com
+    Password: ZXXlkwecxz2390232233
+    Groups: =>Group.admin
