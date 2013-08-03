@@ -23,27 +23,6 @@ class MediaItem extends DataObject {
 	);
 
 	/**
-	 * Set the cloudinary ref
-	 *
-	 * @return self
-	 * @author Andrew Lowther <andrew.lowther@mademedia.co.uk>
-	 **/
-	public function setCloudinaryRef($CloudinaryRef) {
-		$this->CloudinaryRef = $CloudinaryRef;
-		return $this;
-	}
-
-	/**
-	 * Get the cloudinary ref
-	 *
-	 * @return String
-	 * @author Andrew Lowther <andrew.lowther@mademedia.co.uk>
-	 **/
-	public function getCloudinaryRef() {
-		return $this->CloudinaryRef;
-	}
-
-	/**
 	 * Update the CMS fields
 	 * 
 	 * @return FieldList
