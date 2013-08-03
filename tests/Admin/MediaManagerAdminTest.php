@@ -77,6 +77,7 @@ class MediaManagerAdminTest extends SapphireTest {
 		// Confirm that this URL gets you the entire page, with the edit form loaded
 		$this->assertTrue(strpos($response->getBody(), 'Add Media Item') !== false);
 		$this->assertTrue(strpos($response->getBody(), 'ss-gridfield-table') !== false);
+		$this->assertTrue(strpos($response->getBody(), 'window.mediamanager.cloudinary') !== false);
 	}
 
 	/**
