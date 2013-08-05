@@ -57,22 +57,26 @@ class MediaManagerAdmin extends ModelAdmin {
 					cloud_name: "{$config['cloud_name']}",
 					api_key: "{$config['api_key']}"
 				}
-			})(window);
+			}/)(window);
 JS
 );
+
+
+		// Get the base javascript path
+		$BaseJsPath = MEDIAMANAGER_CORE_PATH . '/javascript';
 
 		// Combine the cloudinary files into one super file
 		Requirements::combine_files(
 			'cloudinary.js',
 			array(
-				'mediamanager/javascript/cloudinary/js/load-image.min.js',
-				'mediamanager/javascript/cloudinary/js/canvas-to-blob.min.js',
-				'mediamanager/javascript/cloudinary/js/jquery.fileupload.js',
-				'mediamanager/javascript/cloudinary/js/jquery.ui.widget.js',
-				'mediamanager/javascript/cloudinary/js/jquery.fileupload-process.js',
-				'mediamanager/javascript/cloudinary/js/jquery.fileupload-image.js',
-				'mediamanager/javascript/cloudinary/js/jquery.fileupload-validate.js',
-				'mediamanager/javascript/cloudinary/js/jquery.cloudinary.js'
+				"{$BaseJsPath}/cloudinary/js/load-image.min.js",
+				"{$BaseJsPath}/cloudinary/js/canvas-to-blob.min.js",
+				"{$BaseJsPath}/cloudinary/js/jquery.fileupload.js",
+				"{$BaseJsPath}/cloudinary/js/jquery.ui.widget.js",
+				"{$BaseJsPath}/cloudinary/js/jquery.fileupload-process.js",
+				"{$BaseJsPath}/cloudinary/js/jquery.fileupload-image.js",
+				"{$BaseJsPath}/cloudinary/js/jquery.fileupload-validate.js",
+				"{$BaseJsPath}/cloudinary/js/jquery.cloudinary.js"
 			)
 		);
 
@@ -80,7 +84,7 @@ JS
 		Requirements::combine_files(
 			'mediamanager.js',
 			array(
-				'mediamanager/javascript/mediamanager/mediamanager.core.js'
+				"{$BaseJsPath}/mediamanager/mediamanager.core.js"
 			)
 		);
 
