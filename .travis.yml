@@ -20,3 +20,8 @@ before_script:
 
 script:
   - phpunit mediamanager/tests/ '' flush=all
+
+notifications:
+  email: false
+  irc:
+    - "irc.freenode.net#mademedia"
